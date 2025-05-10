@@ -1,0 +1,361 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+#navbar
+{
+    display:flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+    width: 100%;
+    
+    /* border: 2px solid red; */
+    
+}
+
+/* logo and navbar */
+#logo
+{
+    margin: 34px 45px;
+    
+}
+/* Logo and Image */
+#logo img
+{
+    margin: -12px -4px;
+    height: 66px;
+    border-radius: 12px;
+    /* display:flex ;
+    width: 90px; */
+}
+
+
+/* list styling  */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 20px; 
+}
+
+
+#navbar ul li a
+{
+    text-decoration: none;
+    display: block; /* because we want padding therefore before padding give display block*/
+    padding: 3px 22px;
+    border-radius: 12px;
+    color: white;
+}
+
+#navbar::before
+{
+    content: " ";
+    background-color: black;
+    /* position: absolute; */
+    position:absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+   opacity: 0.3;
+   
+
+}
+
+#navbar ul li a:hover
+{
+   color: black;
+   text-decoration: underline;
+   background-color: rgb(230, 217, 199);
+   border-radius: 12px;
+   /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+   font-family: 'Dangrek', cursive;
+}
+
+
+
+.home
+{
+    display: flex;
+    align-items: center;
+    margin: 0px -96px;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    padding: 0px 191px;
+    height: 565px;
+    justify-content: center;
+}
+
+
+.home::before
+{
+    content: " ";
+    background: url('../food\ bg.jpg') no-repeat center center/cover;
+    /* background-size: cover; */
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 102%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.h-primary{
+    /* margin-top: 130px;
+    margin-bottom: 25px; */
+    color: hwb(0 0% 85%);
+    text-decoration:underline;
+    font-size: 38px;
+    font-family: 'Abril Fatface', cursive;
+    text-shadow: 3px 3px 2px #337fb5;
+}
+
+.home p{
+    font-size: 17px;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    text-align: justify;
+    padding-bottom: 90px;
+    width: 590px;
+
+}
+.btn
+{
+    background-color: rgb(138, 19, 19);
+    margin: auto;
+    margin-top: -80px;
+    display: block;
+    padding:12px;
+    border-radius: 16px;
+    color: rgb(247 247 247);
+    text-shadow: 4px 4px 2px black;
+    box-shadow: 5px 5px 4px 2px #100505;
+    border: 2px solid black;
+   
+}
+
+.center
+{
+    text-align: center;
+    text-align: justify;
+}
+
+.btn:hover
+{
+    box-shadow: -2px -3px 2px 1px rgb(255, 4, 142);
+    text-decoration: underline rgb(3, 3, 3);
+    background-color: rgb(204, 162, 106);
+    cursor: pointer;
+  
+    
+}
+
+/* Service section */
+#Service
+{
+  margin: 34px;   
+  display: flex;
+  
+}
+#Service .box
+{
+    border: 5px solid #553710;
+    padding: 12px;
+    margin: 21px;
+    font-size: 13px;
+    background-color: #ffa6dc33;
+    text-align: justify;
+    border-radius: 33px;
+    box-shadow: 5px 5px 5px 2px black;
+
+}
+#Service .box img
+{
+    height: 160px;
+    /* display: block;
+    margin: auto; */
+    margin-left: 35px;
+    margin-bottom: 15px;
+    width: 255px;
+    border: 2px solid #bf4242;
+    border-radius: 21px;
+    box-shadow: 3px 3px 6px 2px #7b8300;
+
+}
+
+.service-container::before
+{
+    content: " ";
+    background-color: #553710;
+    position: absolute;
+    height: 513px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+.h2-primary
+{
+    color: hwb(0 0% 85%);
+    text-decoration: underline;
+    font-size: 38px;
+    font-family: 'Abril Fatface', cursive;
+    text-shadow: 3px 3px 2px #337fb5;
+    margin-left: 44px;
+    margin-left: 570px;
+    margin-bottom: 22px;   
+}
+
+.h-secondary
+{
+    margin-left: 48px;
+    font-size: 31px;
+    margin-bottom: 6px;
+    font-family:monospace;
+    font-family: monospace;
+    text-shadow: 3px 3px 3px rosybrown;
+}
+
+/* .service-container::before
+{
+    content: " ";
+    background: url("../chilli.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -4;
+    opacity: 0.7; 
+} */
+
+
+/* client section */
+#client-section
+{
+    height: 350px;
+    /* position:relative; */
+}
+
+#clients
+{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+#clients img{
+    height: 155px;
+    flex-direction: row;
+    margin-left: 114px;
+    border-radius: 75px;
+    box-shadow: 5px 5px 5px 5px #000000;
+    border: 3px solid black;
+    padding: 6px;
+}
+.client-item
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.h1-primary
+{
+    color: hwb(0 0% 85%);
+    text-decoration: underline;
+    font-size: 38px;
+    font-family: 'Abril Fatface', cursive;
+    text-shadow: 3px 3px 2px #337fb5;
+    margin-left: 44px;
+    margin-left: 570px;
+    margin-bottom: 22px;
+}
+
+#client-section::before
+{
+    content: " ";
+    background: url("../link.jpeg") no-repeat center center/cover;
+    position: absolute;
+    
+    height:54%;
+    width: 100%;
+    z-index: -4;
+    opacity: 0.7;
+}   
+
+
+/* cotact section */
+.contact-section
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section::before
+{
+  content:"";
+  position: absolute;
+  width: 100%;
+  height:99%;
+  z-index: -1;
+  opacity: 0.6;
+  background: url("../contact.jpeg") no-repeat center center/cover;
+}
+#h3-primary
+{
+    color: hwb(0 0% 85%);
+    text-decoration: underline;
+    font-size: 38px;
+    font-family: 'Abril Fatface', cursive;
+    text-shadow: 3px 3px 2px #337fb5;
+    margin-bottom: 22px; 
+}
+
+/* input[type=text] */
+.contact-item
+{
+    padding: 2px 8px 2px;
+    font-size: 15px;
+    margin-bottom: 22px;
+    border-radius: 4px;
+}
+
+#comment 
+{
+    font-size: 15px;
+    margin-bottom: 22px;
+    border-radius: 4px;
+    width: 211px;
+    border: 2px solid;
+    height: 100px;
+
+}
+label{
+    font-size: 19px;
+    font-weight: 800;
+    color: #0839ad;
+}
+.copyright
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    padding: 4px;
+}

@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+
+
+}
+
+.navbar img {
+
+    width: 117px;
+    height: 103px;
+    margin-left: -300px;
+    border-radius: 53px;
+
+}
+
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar .list a {
+    text-decoration: none;
+    padding-right: 19px;
+    color: #0020c5;
+    margin-right: 33px;
+    padding-left: 12px;
+    font-size: 18px;
+    /* border: 1px solid white; */
+    border-radius: 12px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar .box img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call img {
+    width: 50px;
+    height: 50px;
+    /* margin-left: 45px; */
+    border: 1px solid #1fff01;
+    border-radius: 27px;
+    position: relative;
+    left: 380px;
+}
+
+.navbar .box #num {
+    margin-right: -63px;
+    position: absolute;
+    top: 46px;
+    right: 110px;
+}
+
+.navbar li a:hover {
+    background-color: aquamarine;
+    text-decoration: underline;
+    font-size: 22px;
+}
+
+
+
+.navbar::before
+{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    width: 100%;
+    height: 16%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.navbar #num:hover
+{
+    font-size: 20px;
+    color: darkgoldenrod;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.heading1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    text-shadow: 2px 2px 3px red;
+}
+
+
+.world-tour #para1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    margin-right: 845px;
+    margin-left: 76px;
+    text-align: justify;
+}
+
+#explore
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 480px;
+    margin-top: 100px;
+    border-radius: 15px;
+    box-shadow: 2px 3px 2px 2px palevioletred;
+    font-size: 30px;
+    font-family: monospace;
+    text-shadow: 2px 2px 3px palevioletred;
+}
+
+.world-tour::before
+{
+    content: " ";
+    background: url(pic1.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+   

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM</title>
+    <style>
+        /* 1. CSS reset */
+        body {
+            background: url("gym.jpg") no-repeat center center/cover;
+            /* background-repeat:repeat-y; */
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .left {
+            /* border: solid red 5px; */
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 0px;
+            margin-top: 13px;
+            width: 110px;
+            height: 132px;
+            color: #040404;
+            ;
+        }
+
+        .left img {
+            width: 110px;
+        }
+
+        .left div {
+            font-family: fantasy;
+            text-align: justify;
+        }
+
+        .mid {
+            /* fo mid remember display block--->>> set width--->>>margin auto */
+            /* border: solid red 5px; */
+            /* display: block;
+            width: 40%;
+            margin: 13px auto;
+            background-color: #040404;
+            border-radius: 10px; */
+
+            display: block;
+            width: 51%;
+            background-color: #040404;
+            border-radius: 28px;
+            margin-left: 200px;
+            margin-top: 22px;
+        }
+
+        .right {
+            /* border: solid red 5px; */
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 0px;
+            margin-top: 13px;
+        }
+
+        .navbar {
+            /* border: 2px solid black; */
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+
+        }
+
+        .navbar li a {
+            /* text-decoration: none;
+            margin: 5px;
+            padding: 0px;
+            font-size: 24px;
+            color: white; */
+
+            text-decoration: none;
+            /* margin: 5px; */
+            padding: 4px;
+            font-size: 27px;
+            color: white;
+            margin-left: 6px;
+
+        }
+
+        .navbar li a:hover {
+            background-color: rgb(231, 134, 99);
+            color: aqua;
+        }
+
+        .navbar li a.active {
+            text-decoration: underline;
+            background-color: rgb(238, 207, 196);
+            color: rgb(0, 0, 0);
+        }
+
+        .btn {
+            border: 3px solid #000000;
+            border-radius: 14px;
+            padding: 5px;
+            margin-top: 23px;
+            font-size: 20px;
+        }
+
+        #mail
+        {
+            margin-left:20px;
+        }
+
+        .btn:hover {
+            background-color: rgb(240, 219, 237);
+            color: chocolate;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .container {
+            border: 4px dashed red;
+            display: inline-block;
+            margin: 190px 33px;
+            padding: 13px 29px;
+            width: 45%;
+            border-radius: 10px;
+
+            color: rgb(107, 107, 45);
+
+
+        }
+
+        #gym {
+            text-decoration: underline;
+            border-radius: 10px;
+            color: #0d5817;
+        }
+
+        /* .container div {
+            font-size: 33px;
+
+        } */
+        .form {
+            border: 2px solid black;
+            margin: 7px;
+            padding: 6px;
+            font-size: 17px;
+            width: 240px;
+            border-radius: 13px;
+            font-style: oblique;
+            background-color: #a3e9cfb0;
+            cursor: pointer;
+        }
+
+
+
+        #sub {
+            margin-top: 17px;
+            margin-left: 254px;
+            width: 17%;
+            padding: 4px;
+            border-radius: 11px;
+            background-color: #00BCD4;
+            cursor: pointer;
+        }
+
+        #sub:hover {
+            background-color: pink;
+            text-decoration: underline;
+        }
+        
+        /* tray::before
+        {
+            content: " ";
+            background: url('https://source.unsplash.com/user/wsanter') no-repeat center center/cover;
+            position:absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.7;
+        } */
+    </style>
+</head>
+<link rel="stylesheet" href="gym.css">
+
+<body>
+    <tray>
+
+        <header class="header">
+            <!-- left box for logo -->
+        <div class="left">
+            <img src="gymlogo.jpg" alt="">
+            <div>ParasGym</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <div class="navbar">
+                <ul>
+                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- right box for button -->
+        <div class="right">
+            <button  id="call"  class="btn">
+                Call Us
+            </button>
+            <button   id="mail" class="btn">
+                E-mail Us
+            </button>
+        </div>
+    </header>
+    <div class="container">
+        <h1 id="gym">Paras GYM Fitness Freak</h1>
+        <form action="noaction.php"></form>
+        <!-- "noaction.php" as we didnt hve any backend now  -->
+        <div>
+            <input type="text" name="" placeholder="enter your name" class="form">
+        </div>
+        <!-- placeholder give prewritten that help user to know what actually is to fill -->
+        <div>
+            <input type="number" name="" placeholder="contact no." class="form">
+        </div>
+        <div>
+            <input type="email" name="" placeholder="enter your E-mail" class="form">
+        </div>
+        <div>
+            <input type="text" name="" placeholder="enter your city" class="form">
+        </div>
+        <button id="sub">
+            Submit
+        </button>
+
+    </div>
+</tray>
+</body>
+
+</html>

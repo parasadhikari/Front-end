@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url('../images/pic7.jpg');
+    /* uppar ka dim ho gya niche bright hi hh such that apna navbar achhe se dikhega */
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+nav {
+    width: 100%;
+    height: 9vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ::before {
+    content: " ";
+    background: black;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+
+
+:root {
+    --animate-duration: 2sec;
+    --animation-iteration-count: infinite;
+  }
+
+
+
+nav .logo {
+    position: relative;
+    font-size: x-large;
+    left: 1vw;
+    color: red;
+}
+
+nav .logo :hover
+{
+ cursor: pointer;
+} 
+
+nav .menu a {
+    color: white;
+    position: relative;
+    font-size: 1.3vw;
+    position: relative;
+    /* right: 0vw; */
+    margin: 2vw;
+    padding: 1vw;
+    border-radius: 1.5vw;
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+nav .menu a:hover {
+    background-color: burlywood;
+    text-decoration: underline;
+    font-size: x-large;
+    font-weight: 700;
+    color: aqua;
+}
+
+main-section {
+    height: 91vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*for screen center*/
+    text-align: center;
+    /*for main-section center*/
+    flex-direction: column;
+    color: white;
+}
+
+main-section h3 {
+    font-weight: 200;
+    font-size: 3vw;
+    letter-spacing: 0.5vw;
+    text-shadow: 0.1vw 0.1vw 1px black
+}
+
+
+main-section h1 {
+    font-weight: 700;
+    font-size: 5vw;
+    letter-spacing: 0.4vw;
+    text-shadow: 0.2vw 0.2vw 2px black;
+    margin-bottom: 3vh;
+}
+
+
+main-section h1 span {
+    font-weight: 700;
+    font-size: 5vw;
+    letter-spacing: 0.4vw;
+    
+    text-shadow: 0.2vw 0.2vw 2px black;
+}
+
+main-section p {
+    font-weight: 300;
+    font-size: 2.5vw;
+    color: black;
+    letter-spacing: 0.2vw;
+    text-shadow: 0.2vw 0.2vw 2px white;
+    margin-bottom: 5vh;
+}
+
+
+main-section a {
+    position: relative;
+    margin: 2vw;
+    padding: 0.5vw;
+    border-radius: 1.5vw;
+    text-decoration: none;
+    font-family: ui-monospace;
+    font-weight: bold;
+    font-size: larger;
+}
+
+main-section .btn1 {
+    background-color: #d9bbed;
+    color: black;
+    box-shadow: 0.2vw 0.3vw 0.5vw 0.3vw seagreen;
+}
+
+
+main-section .btn2 {
+    background-color: #d9bbed;
+    color: black;
+    box-shadow: 0.2vw 0.3vw 0.5vw 0.3vw seagreen;
+}
+
+
+main-section a:hover {
+    background-color: burlywood;
+    text-decoration: underline;
+    font-size: x-large;
+    font-weight: 700;
+    color: rgb(36, 5, 110);
+}
+
+.change_content:after
+{
+    content: " ";
+    animation: changetext 20s infinite linear;
+}
+
+@keyframes changetext {
+    0%{
+        content: "Darjeeling";
+        color: green;
+    }
+    
+    20%{
+        content: "Agra";
+        color: rgb(58, 248, 0);
+    }
+    
+    40%{
+        content: "Jaipur";
+        color: #FFEB3B;
+       
+    }
+    
+    60%{
+        content: "Kerala";
+        color: orange;
+    }
+    
+    80%{
+        content: "Delhi";
+        color: red;
+    }
+    
+    100%{
+        content: "Mumbai";
+        color: blue;
+    }
+    
+}
